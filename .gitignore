@@ -1,0 +1,36 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.env/
+*.env
+
+# Model weights
+saved_model/
+*.bin
+
+# Logs and generated files
+log files/
+*.log
+*.txt
+
+# Plots and generated images
+images/
+*.png
+
+# LIME output
+static/lime_explanation.html
+
+# Temporary files
+.DS_Store
+*.tmp
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Data files
+ai_dataset/
+*.csv

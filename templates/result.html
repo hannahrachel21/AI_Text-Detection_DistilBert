@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fafafa;
+            padding: 50px;
+            text-align: center;
+        }
+        .card {
+            display: inline-block;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+        }
+        .lime-container {
+            margin-top: 40px;
+            text-align: left;
+        }
+        .back-btn {
+            margin-top: 20px;
+            background: #2196F3;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Prediction Result</h1>
+        <p><strong>Label:</strong> {{ label }}</p>
+        <p><strong>Confidence:</strong> {{ confidence }}</p>
+
+        <div class="lime-container">
+            <h2>🧠 LIME Explanation</h2>
+            {{ lime_html | safe }}
+        </div>
+
+        <a href="/" class="back-btn">🔙 Go Back</a>
+    </div>
+</body>
+</html>
